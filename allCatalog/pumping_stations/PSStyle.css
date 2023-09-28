@@ -1,0 +1,261 @@
+.breadCrumbs{
+    display: flex;
+    gap: 20px;
+    margin: 42px 0 42px 15px;
+}
+
+.bcOne img, .bcTwo img, .bcFour img{
+    filter: opacity(0.4)
+}
+
+.bcThree a{
+    text-decoration: none;
+    color: #8f8e90; 
+}
+
+/* TOP */
+
+.topBg_2{
+    display: none;
+}
+
+.topBg{
+    background-image: url(../../img/components-plants.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(6.5vw + 470.8px);
+    /* 600 510(600) */
+
+    position: relative;
+    background-position: center;
+}
+
+.topTitle{
+    background-color: #012b5f;
+    width: calc(16.3vw + 177.1px);
+    /* 500 275 (600) */
+    height: calc(4.3vw + 344px);
+    /* 430 370 (600) */
+
+    color:white;
+    padding: calc(2.75vw + 63.4px) 50px;
+    /* 118 50, 80 50 (600) */
+    position: absolute;
+    right: calc(24.6vw - 137.8px);
+    /* 350 10 (600) */
+}
+
+.topTitle p{
+    font-size: calc(0.14vw + 12.13px);
+    /*  15 13 (600) */
+    line-height: 20px;
+}
+
+.topTitle h1{
+    font-size: calc(0.50vw + 25px);
+    /* 35 28 (600) */
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 40px;
+}
+
+/* itemsBox */
+
+.itemsTitle h1{
+    font-size: calc(1.2vw + 21.1px);
+    /* 45 25 (320) */
+    margin-bottom: 50px;
+}
+
+.itemsBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: calc(4.48vw - 38.8px);
+    /* 50 15 (1200) */
+
+    margin: 50px 0 150px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: calc(23vw + 93px);
+    /* 550 370 (1200) */
+    height: 280px;
+    padding: 0 10px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: #f2f2f2;
+    box-shadow: 0.5em 0.5em 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover{
+    box-shadow: 3px 1px 22px grey;
+}
+
+.itemImg img{
+    width: calc(12.4vw + 28.7px);
+    /* 275 178 (1200) */
+    filter: drop-shadow(7px 10px 6px #000);
+}
+
+.itemText p{
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+
+.itemText h4{
+    font-size: calc(0.18vw + 11.4px);
+    /* 15 12 (320) */
+    font-weight: 700;
+    color: #012b5f;
+    margin: 8px 0;  
+    width: calc(5.7vw + 85.7px);
+    /* 200 155 (1200) */
+}
+
+
+.itemButton {
+	background: #012b5f;
+	border-radius: 15px;
+	font-size: calc(0.25vw + 10px);
+    /* 15 13 (1200) */
+	padding: 12px;
+	text-align: center;
+	color: #FFFFFF;
+	animation: itemButton 2s infinite;
+    margin: 50px 0;
+    width: calc(2vw + 57px);
+    /* 95 80 (1200) */
+}
+.itemButton:hover {
+	animation: none;
+}
+ 
+@keyframes itemButton {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(0.95, 0.95, 0.95);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.itemButton a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1110px) {
+    /* 1 screen */
+
+    .itemsBlock{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: calc(11.3vw - 65.6px) 10px 40px;
+        /* 60 10 40, 0 10 40 (750) */
+        height: calc(6.7vw + 280.2px);
+        /* 355 320 (590) */
+        width: calc(24vw + 48px);
+        /* 315 190 (590) */
+    }
+
+    .itemImg img{
+        width: calc(23.6vw - 2px);
+        /* 260 175 (750) */
+    }
+
+    .itemText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemText h4{
+        text-align: center;
+    }
+
+    .itemButton{
+        margin: 20px 0 0;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    /* 1 screen */
+    
+}
+
+
+@media(max-width: 600px){
+
+    /* 1 screen */
+
+    .topBg{
+        display: none;
+    }
+
+    .topBg_2{
+        display: block;
+        background-color: #012b5f;
+        color: white;
+        padding: 70px 0;
+    }
+
+    .topTitle_2 h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .topTitle_2 p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    /* 1 screen */
+
+    .item{
+        width: calc(20.3vw + 180px);
+        /* 300 245 (320) */
+    }
+
+    .itemText p {
+        margin-top: 0;
+    }
+
+    .itemImg img {
+        width: calc(9.2vw + 150px);
+        /* 205 180 (320) */
+    }
+
+    .itemText h4{
+        width: unset;
+    }
+}
+
+
+

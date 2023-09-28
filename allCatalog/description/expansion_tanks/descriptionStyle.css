@@ -1,0 +1,243 @@
+.breadCrumbs{
+    display: flex;
+    gap: calc(1vw + 2.1px);
+    /* 20 5 (320) */
+    margin: 42px 0 42px 15px;
+    font-size: calc(0.1vw + 12.6px);
+    /* 15 13 (320) */
+}
+
+.bcOne img, .bcTwo img, .bcFour img{
+    filter: opacity(0.4)
+}
+
+.bcThree a{
+    text-decoration: none;
+    color: #8f8e90; 
+}
+.bcThree a:hover{
+    color: #013066;
+}
+
+/* description */
+
+.descripBg{
+    background: #FFF;
+    padding: 35px;
+    margin-bottom: 45px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .03);
+    transition: box-shadow .15s ease .05s;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin: 50px 0;
+}
+.description img{
+    transition: 0.5s;  
+}
+
+.description img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.desImg, .desImg12, .desImg24, .desImg50, .desImg80, .desImg100_150, .desImg200_500, .desImg750_2000{
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 15px;
+    filter: drop-shadow(7px 10px 6px #000);
+}
+
+.desImg24 img, .desImg50 img {
+    width: calc(7.5vw + 111px);
+    /* 260 135 (320) */
+}
+
+.desImg12 img, .desImg80 img, .desImg100_150 img, .desImg750_2000 img {
+    width: calc(5.1vw + 98.6px);
+    /* 200 115 (320) */
+}
+
+.img_5, .desImg200_500 img{
+    width: calc(4.8vw + 84.5px);
+    /* 180 100 (320) */
+}
+
+.descripBg h1{
+    font-size: calc(0.8vw + 18.2px);
+    /* 34 27 (1100) */
+    font-weight: 500;
+    color: #013066;
+    line-height: 1.2;
+}
+
+.desText h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #013066;
+
+    margin: 30px 0px;
+}
+
+.desText p{
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: calc(0.12vw + 13.6px);
+    /* 16 14 (320) */
+    line-height: calc(0.4vw + 18.6px);
+    /* 27 20 (320) */
+}
+
+.desText h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #013066;
+
+    margin-top: 95px;
+}
+
+.desItems ul{
+    margin-left: calc(0.48vw + 6.4px);
+    /* 16 8 (320) */
+    margin-bottom: 80px;
+    font-size: calc(0.12vw + 12.6px);
+    /* 15  13 (320) */
+    line-height: calc(0.6vw + 18px);
+    /* 30 20 (320) */
+}
+
+.descriptionText h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #013066;
+}
+
+/* table */
+
+.desInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: calc(1.47vw + 5.7px);
+    /* 35 22 (1100) */
+    margin-top: 20px;
+    font-size: calc(0.34vw + 10.2px);
+    /*17 14 (1100)*/
+}
+
+.desInfoBox h1{
+    font-size: calc(0.2vw + 15.2px);
+    /*  20 16 (320) */
+}
+
+.desItem{
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;   
+}
+
+.infoBlockName{
+    flex-grow: 1;
+}
+
+.infoBlockValue{
+    flex-grow: 0;
+    text-align: end;
+    margin-left: 15px;
+}
+
+/* accordion */
+
+.collapsible {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: calc(0.34vw + 10.2px);
+    /* 17 11 (1100) */
+}
+  
+.active, .collapsible:hover {
+    background-color: transparent;
+}
+  
+.collapsible:after {
+    content: '\25BC';
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\25B2";
+}
+  
+.content {
+    padding: 0 15px 2px;
+    font-size: calc(0.34vw + 10.2px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid grey;
+}
+.manual{
+    margin-bottom: 40px;
+}
+
+.manual a{
+    text-decoration: none;
+    color: #337cbc;
+    font-size: 15px;
+}
+.manual a:hover{
+    color: black;
+}
+
+
+
+@media (max-width: 1155px) {
+
+    /* 1 screen */
+    .desImg{
+        margin-left: calc(22.3vw - 26.5px);
+        /* 130 45 (320) */
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .desImg img{
+        margin-right: 140px;
+    }
+
+    .desImg12, .desImg80, .desImg100_150, .desImg200_500, .desImg750_2000{
+        padding-top: 0;
+        margin-left: calc(27.6vw - 53.4px);
+        /* 140 35 (320) */
+    }
+
+    .desImg24, .desImg50{
+        margin-left: calc(22.3vw - 36.5px);
+        /* 120 35 (320) */
+        padding-top: 0;
+    }
+
+    .description{
+        display: block;
+    }
+}
+
+@media(max-width:1100px){
+    /* 1 screen */
+    .desInfo{
+        display: block;
+    }
+
+}
