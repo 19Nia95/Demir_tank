@@ -1,0 +1,203 @@
+.imgBlock{
+    background-image: url(img_p/1.jpg);
+    background-position: center;
+}
+
+.imgTitle{
+    background-color: transparent;
+    left: 0;
+    top: calc(6vw + 21.6px);
+    /* 135 60 (360) */
+    width: auto;
+    padding: 0;
+    
+}
+
+.imgTitle h1{
+    font-size: calc(3.6vw + 9.5px);
+    /* 83 26 (360) */
+    line-height: calc(2.8vw - 5.3px);
+    /* 50 5 (360) */
+}
+
+.imgTitle p{
+    font-size: calc(0.7vw + 10.2px);
+    /*25 13 (360)  */
+}
+
+/* 2 screen project */
+
+.project{
+    margin-top: calc(27.7vw + 116.6px);
+    /* 650 250 (480) */
+}
+
+.project_title{
+    font-size: calc(1vw + 9.5px);
+    /* 28 13 (360) */
+    line-height: calc(1.7vw + 8.7px);
+    /* 42 15 (360) */
+    margin-bottom: calc(6.4vw + 27px);
+    /* 150 50 (360) */
+}
+
+.items_project{
+    margin-bottom: calc(13vw + 54px);
+    /* 300 100 (360) */
+    padding-bottom: calc(1.1vw + 21px);
+    /* 43 25 (360) */
+    border-bottom: 1px solid grey;
+}
+
+.item_project{
+    display: flex;
+    gap: 55px;
+}
+
+.item_projSlider{
+    width: 686px;
+}
+
+.item_projSlider img{
+    margin: 0 auto;
+}
+
+.item_projInfo{
+    margin-top: 174px;
+}
+
+.item_projInfo h1{
+    font-size: calc(1vw + 14px);
+    /* 35 18 (360) */
+    line-height: calc(0.9vw + 22.7px);
+    /* 40 26 (360) */
+    margin-bottom: calc(0.3vw + 3.8px);
+    /* 10 5 (360) */
+}
+
+.item_projInfo p{
+    font-size: calc(0.3vw + 12px);
+    /* 18 13 (360) */
+    line-height: calc(1.2vw + 0.6px);
+    /* 24 5 (360) */
+}
+
+/* slider */
+
+.slider{
+    max-width: 55%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
+
+.button{
+    position: absolute;
+    background: transparent;
+
+    top: 50%;
+    z-index: 6;
+    font-size: calc(1.28vw + 10.3px);
+    /* 35 15 (360) */
+    border: 0;
+    color: white;
+}
+
+.slider-prev{
+    left: 10px;
+}
+
+.slider-next{
+    right: 10px;
+}
+
+
+
+
+@media(max-width: 1320px){
+
+
+    /* 2 screen project */
+
+    .item_project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .item_projInfo{
+        margin-top: 40px;
+
+    }
+
+    .item_projInfo h1{
+        text-align: center;
+    }
+
+    .item_projInfo p{
+        text-align: center;
+    }
+
+    /* slider */
+    .slider{
+        max-width: 85%;
+    }
+}
+
+
+@media(max-width: 480px){
+    
+    .project{
+        margin-top: 250px;
+    }
+
+    .imgBlock{
+        display: block;
+    }
+
+    .imgBlock2{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+.breadCrumbs{
+    display: flex;
+    gap: 20px;
+    margin: 42px 0 42px 15px;
+}
+
+.bcOne img, .bcTwo img, .bcFour img{
+    filter: opacity(0.4)
+}
+
+.bcThree a{
+    text-decoration: none;
+    color: #8f8e90; 
+}
+
+/* contacts */
+
+.contacts{
+    background-color: white;
+    padding: 50px 26px;
+    border-radius: 13px;
+
+    margin-bottom: calc(24vw + 22.8px);
+    /* 500 100 (320) */
+}
+
+.contacts h1{
+    font-size: calc(0.6vw + 18.07px);
+    /* 30 20 (320)*/
+    margin-bottom: 20px;
+}
+
+.contacts h4{
+    margin: calc(1vw + 12px) 0;
+    /* 30 15 (320) */
+    font-size: calc(0.12vw + 12.6px);
+    /* 15 13 (320) */
+}
+
+.contacts>h4>a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #5883c4;
+    font-size: calc(0.12vw + 11.6px);
+    /* 14 12 (320)*/
+}
+
+.contacts>h4>a:hover{
+    color: black;
+}
+
+/* map */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media (max-width: 375px) {
+    
+    .contacts h4{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+    }
+}
